@@ -1,0 +1,17 @@
+.input{
+   height:25px;
+   width: 600px;
+}
+
+.btn {
+  background: grey;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+#mainTable{
+	width: 800px;
+	white-space: nowrap;
+}

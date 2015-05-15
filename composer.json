@@ -1,0 +1,12 @@
+{
+    "name": "webparser",
+    "description" : "Web parser",
+    "keywords" : ["webparser"],
+    "autoload": { "psr-4": {
+            "Webparser\\": "src/Webparser/"
+    }},
+    "require": {
+    	"zendframework/zend-dom" : "2.3.*"
+    },
+	"version": "1.0.0"
+}
