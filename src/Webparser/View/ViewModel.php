@@ -31,7 +31,7 @@ class ViewModel extends AbstractViewModel {
             return ob_get_clean();
         } 
         else {
-            throw new \Exception('Template ' . $template . ' not found!');
+            throw new \Exception('Template ' . $this->getTemplate() . ' not found!');
         }
     }
 }

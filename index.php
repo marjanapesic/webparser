@@ -19,7 +19,7 @@ else
     $controller = new \Webparser\Controller\Main();
     $viewModel = $controller->indexAction();
     if($viewModel instanceof ViewModel && !$viewModel->getTemplate()){
-        $viewModel->setTemplate('webparser\main\index');
+        $viewModel->setTemplate('webparser'.DIRECTORY_SEPARATOR.'main'.DIRECTORY_SEPARATOR.'index');
     }
 }
 
