@@ -1,13 +1,15 @@
 <?php
 namespace Webparser\Controller;
 
+use Webparser\View\ViewModel;
+use Webparser\View\JsonModel;
+
 class Main {
     
     
     public function indexAction()
     {
-        $view = new \Webparser\View\Index();
-        return $view->output();
+        return new ViewModel(array());
     }
     
     public function parseAction()
@@ -34,6 +36,6 @@ class Main {
             $links[] =  $node->ownerDocument->saveXML($node);
         }
 
-        return json_encode($links);
+        return new JsonModel($links);
     }
 }
